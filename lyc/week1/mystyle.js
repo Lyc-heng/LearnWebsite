@@ -24,7 +24,7 @@ $(document).ready(function(){
     $('.btn1').click(function(){
         clearInterval(timer);
         if(i == 0){
-            i = 5;//注意此时i的值
+            i = 5;
         }
         i--;
         Show();
@@ -35,7 +35,7 @@ $(document).ready(function(){
     $('.btn2').click(function(){
         clearInterval(timer);
         if(i == 4){
-            i = -1;//注意此时i的值
+            i = -1;
         }
         i++;
         Show();
@@ -67,9 +67,4 @@ function Show(){
     
     //给.tab创建一个新的Class为其添加一个新的样式，并且要在css代码中设置该样式
     $('.tab').eq(i).addClass('bg').siblings('.tab').removeClass('bg');
-    
-    /*
-     * css中添加的代码：
-     * .bg{ background-color: #f00; }
-     * */
 }

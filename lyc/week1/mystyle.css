@@ -228,3 +228,41 @@ table.titletable{
 	background-color:white;
 	width:50%;
 }
+
+/*-------------------------------------------------------------------------*/
+/*详细新闻界面实现*/
+.newList{
+	float:medium;
+	width:100%;
+	height:30px;
+}
+
+.newList table{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.newList td{
+	border-top:0px solid #000000;
+	border-left:0px solid #000000;
+	border-bottom:0px solid #000000;
+	border-right:2px solid #000000;
+	padding:3px;
+	width:30px;
+	text-align:center;
+	border-color:#DEDEDE;
+}
+
+.newListText{
+	width:70%;
+	float:left;
+}
+
+.newListTextDetail{
+	float:right;
+	width:80%;
+}
+.newListAdv{
+	width:30%;
+	float:left;
+}

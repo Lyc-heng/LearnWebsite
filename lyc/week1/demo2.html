@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<script src="jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+<script src="myAngularJS.js"></script>
+<script src="mystyle.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="newList" ng-app="selectApp" ng-controller="mySelectCtrl">
+		<table>
+			<tbody>
+				<tr>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">首页</a></td>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">资讯</a></td>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">视频</a></td>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">直播</a></td>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">财经</a></td>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">娱乐</a></td>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">体育</a></td>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">时尚</a></td>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">汽车</a></td>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">房产</a></td>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">科技</a></td>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">读书</a></td>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">游戏</a></td>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">文化</a></td>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">历史</a></td>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">军事</a></td>
+					<td><a href="demo.html" style ="font-size: 10px;color: black; ">旅游</a></td>
+					<td style="border-right:0px"><a href="demo.html" style ="font-size: 10px;color: black;"><a href="demo.html" style ="font-size: 10px;color: black; ">佛教</a></td>
+					<td style="border-right:0px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+					<td style="border-right:0px"><select ng-init="selectedName = names[0]" ng-model="selectedName" ng-options="x for x in names">
+</select></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<hr>
+
+<div class="newListText">
+	<div class="newListTextDetail" ng-app="textApp" ng-controller="myTextCtrl">
+		<p1 style="font-size: 25px;font-weight:bold;">这名市长朋友圈“叫卖”鸭子 3天后卖出近40万只</p1>
+		<p style="color: #999999;">2018年04月14日 12:11:12</p>
+		<p style="color: #999999;">来源：政事儿</p>
+		<hr>
+		<p style="font-size: 18px;text-indent:20px;color: #2B2B2B;">  原标题:朋友圈“叫卖”鸭子的市长<br><br>
+
+&nbsp;4月12日、13日这两天，安徽省池州市市长雍成瀚成了“网红”。<br><br>
+
+&nbsp;“政事儿”（微信ID：xjbzse）注意到，4月10日这一天，雍成瀚在微信“朋友圈”发布了一条消息：强大的朋友圈，各位老友，近期，池州市贵池区梅龙街道S321沿线畜禽养殖场全部关闭清理，有大量优质蛋鸭对外出售，量大价优，欢迎各宾馆酒店及有关公司联系洽谈。<br><br>
+
+&nbsp;据安徽当地媒体报道，<b>雍成瀚在朋友圈里“吆喝”、“叫卖”鸭子，主要是为了帮助辖区内的养鸭户。</b><br><br>
+
+&nbsp;池州市贵池区梅龙街道S321沿线是蛋鸭等畜禽养殖户的聚集地。由于选址不够合理、养殖户环保意识不强等原因，导致公路两边常年异味难消，畜禽粪便也成为河道重要污染源之一。<br><br>
+
+&nbsp;4月初，安徽开始专项整治长江安徽段污染突出问题，S321沿线的畜禽养殖污染被提上日程。<b>按照专项整治日程表，沿线的所有畜禽养殖场所，都要关闭清理。</b>如何解决200家养殖户、50多万只鸭子的销路，成了难题。雍成瀚因此在朋友圈推销蛋鸭，表态“既要保护好生态环境，又要保障农民收入，最大限度减少养殖户损失。”<br><br>
+
+&nbsp;近年来，市长卖大米，市长卖苹果、县长卖枸杞、书记卖旅游特产等领导干部当“推销员”的案例，并不少见。雍成瀚此举也引发了广泛关注。全国党建网站联盟共产党员网、人民网等都发表了评论文章。<br><br>
+
+&nbsp;“值得领导干部学习”，共产党员网评述说。人民网发文评价称，<b>“有人质疑是在创新还是作秀。我觉得，如果这样的‘秀’，能够解决百姓的实际困难，那么‘作秀’就是一种担当、就是一种创新，也就是一种民心工程”。</b><br><br>
+
+&nbsp;那么雍成瀚是否真的帮助养殖户解决了实际困难呢？<br><br>
+
+&nbsp;据安徽网报道，雍成瀚带头“吆喝”，各级党政机关干部也通过微信等渠道帮助转发扩散售鸭消息，<b>至4月13日晚，共售出蛋鸭将近40万只，目前仅剩下10万余只。</b><br><br>
+
+&nbsp;“政事儿”（微信ID：xjbzse）注意到，雍成瀚生于1964年12月，1985年从安徽大学中文系毕业后，曾留校工作，当过安徽大学校长办公室副主任、安徽大学办公室副主任。2003年转入仕途，曾任安徽省旅游集团有限公司办公室主任，合肥市副市长，合肥市委常委、纪委书记，芜湖市委副书记。<b>从2015年起开始担任池州市长。</b><br><br>
+</p>
+<img src="2018-4-14-0.jpeg"  alt="采访图" style="width: 90%;margin: 0 auto;"/>
+<p style="font-size: 18px;text-indent;20px;color: #2B2B2B;">其2015年从芜湖到池州任职，还有一段“插曲”。<br><br>
+
+&nbsp;2015年2月，安徽省委组织部发布干部公示公告，时任池州市委副书记的王强，拟提名为池州市政府市长人选。<b>可公示期结束后，王强并未走上池州市长岗位。安徽省委组织部干部监督处工作人员接受采访时称，任前公示期间，王强被举报。不久，王强被宣布调查。</b><br><br>
+
+&nbsp;2015年8月，安徽省委组织部再度发布任前公示，<b>时任芜湖市委副书记的雍成瀚，被提名为池州市政府市长人选。</b><br><br>
+
+&nbsp;“政事儿”（微信ID：xjbzse）注意到，担任池州市长后，雍成瀚很重视池州的旅游工作，提出了建设“国际旅游目的地和中国养老、健康养生首选地”目标。<br><br>
+
+&nbsp;此番推销蛋鸭之前，雍成瀚也曾在2016央视财经论坛暨中国上市公司峰会等场合，推销池州的全域旅游，表示“池州是被国家旅游局列为首批‘国家全域旅游示范区’和第二批‘国家级旅游业改革创新先行区’创建名单的城市，你说池州有不创建全域旅游城市的理由吗？”<br><br>
+
+&nbsp;<b>“（发展旅游）没有一个好的环境条件根本不行，我们常说‘房间打扫干净再请客’”，雍成瀚说。本次整治S321沿线的畜禽养殖污染，也是“打扫房间”的一部分。</b>据池州日报报道，4月8日，雍成瀚来到鸭棚拆除现场，现场督查突出环境问题整改工作。<br><br>
+
+&nbsp;“政事儿”（微信ID：xjbzse）撰稿/新京报记者王姝<br><br>
+
+</p>
+	</div>
+</div>
+
+<div class="newListAdv">
+	<p style="font-size: 30px;">广告区域</p>
+</div>
+</body>
+</html>
